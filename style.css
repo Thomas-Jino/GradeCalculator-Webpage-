@@ -1,0 +1,141 @@
+:root {
+  --theme-bg: rgb(90, 94, 94);
+  --text-light: #ffffff;
+  --text-dark: #000000;
+  --gradient: linear-gradient(to bottom, #12c2e9, #c471ed, #f64f59);
+}
+
+body {
+  background-color: var(--theme-bg);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+h1 {
+  color: white;
+  text-decoration: underline;
+  size: small;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 20%;
+  background: var(--gradient);
+  border-radius: 10px;
+  justify-content: center;
+  padding: 2% 2% 1% 2%;
+  box-sizing: border-box;
+}
+
+.container-head,
+.container-body,
+.container-footer {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container-head {
+  text-align: center;
+}
+
+.container-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--text-dark);
+}
+
+.name-div,
+.mark-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.name-div p,
+.mark-div p {
+  width: 20%; /* or a fixed width like 80px */
+  margin: 0;
+}
+
+.name-div input {
+  width: 100%; /* fill the rest of the space */
+  height: 10%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.mark-div input {
+  width: 100%; /* fill the rest of the space */
+  height: 10%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.align-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  text-align: center;
+}
+
+/* Button styling */
+.button-40 {
+  margin-top: 10px;
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1rem;
+  padding: 0.1rem 1rem;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  width: auto;
+  user-select: none;
+}
+
+.button-40:hover {
+  background-color: #374151;
+}
+
+.button-40:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (max-width: 1440px){
+  .container {
+    min-width: 20%;
+  }
+}
+@media (max-width: 1024px){
+  .container {
+    min-width: 30%;
+  }
+}
+@media (max-width: 460px){
+  .container {
+    min-width: 80%;
+  }
+}

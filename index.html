@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/app_icon.ico" type="image/x-icon">
+  <title>Grade Calculator</title>
+</head>
+<body>
+  <h1>Project-1 (Grade Calculator)</h1>
+  <div class="container">
+    <div class="container-head">
+      <h3>Enter Your Details</h3>
+    </div>
+    <div class="container-body">
+      <form>
+        <div class="name-div">
+          <label for="input_name">Name:</label>
+          <input type="text" name="name" id="input_name" />
+        </div>
+        <div class="mark-div">
+          <label for="input-mark">Mark:</label>
+          <input type="number" name="mark" id="input-mark" required/>
+        </div>
+        <div class="align-btn">
+          <button type="submit" class="button-40" id="submit-btn">SUBMIT</button>
+        </div>
+      </form>
+      <div class="result">
+        <h4 id="result-h4"></h4>
+      </div>
+    </div>
+    <div class="container-footer">
+      <h5>You can enter your mark here and find your grade out of 100 marks.</h5>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
